@@ -22,19 +22,23 @@ public class Car {
     }
 
     public String startEngine() {
-        System.out.println(getClass().getSimpleName());
+        printSimpleName();
         return "the car's engine is starting";
 
     }
 
     public String accelerate() {
-        System.out.println(getClass().getSimpleName());
+        printSimpleName();
         return "the car is accelerating";
     }
 
     public String brake() {
-        System.out.println(getClass().getSimpleName());
+        printSimpleName();
         return "the car is braking";
+    }
+
+    private void printSimpleName() {
+        System.out.println("Class name: " + getClass().getSimpleName());
     }
 
 
